@@ -8,12 +8,33 @@
 
 
 
-int[] grades = { 4, 5, 3, 5, 4 };
-int sum = 0;
-foreach (int grade in grades)
+// int[] grades = { 4, 5, 3, 5, 4 };
+// int sum = 0;
+// foreach (int grade in grades)
+// {
+//     Console.WriteLine(grade);
+//     sum += grade;
+// }
+// Console.WriteLine($"Сумма всех оценок: {sum}");
+// Console.WriteLine($"Средний балл: {(double)sum / grades.Length}");
+
+
+
+// string[] students = { "Аня", "Ярослав", "Вика" };
+// int count = 0;
+// int allStud = 0;
+// foreach (string student in students)
+// {
+//     Console.WriteLine($"{count += 1}. {student}");
+//     allStud += 1;
+// }
+// Console.WriteLine($"Всего учеников: {allStud}");
+
+
+int[] points = { 10, 20, 15 };
+
+for (int i = 0; i < points.Length; i++)
 {
-    Console.WriteLine(grade);
-    sum += grade;
+    points[i] += 5;
+    Console.WriteLine(points[i]);
 }
-Console.WriteLine($"Сумма всех оценок: {sum}");
-Console.WriteLine($"Средний балл: {(double)sum / grades.Length}");
